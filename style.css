@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #070b24;
+}
+
+.custom-card {
+    width: 40%;
+    margin: 5% auto;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+    padding: 11px 20px 17px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #1D1933;
+}
+
+ol,
+ul {
+    padding-left: 0rem !important;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: #aaa !important;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    box-shadow: unset !important;
+}
+
+.card-title,
+.card-text {
+    color: #fff !important;
+}
+
+.pass-content i {
+    font-size: 8px;
+    margin-right: 10px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.inputfeild {
+    position: relative;
+}
+
+.inputfeild i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 14px;
+    transform: translateY(-50%);
+    color: #999;
+    cursor: pointer;
+}
+
+.valid i {
+    font-size: 14px;
+    color: aquamarine;
+}
+
+.weak {
+    color: red;
+}
+
+.Strong {
+    color: aquamarine;
+}
+
+.removeSmooth {
+    color: #aaa;
+}
+
+.btnWrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    color: #fff;
+    background-image: linear-gradient(79deg, rgba(99, 69, 237, 1) 0%, rgba(224, 57, 253, 1) 100%);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+
+
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnWrapper i {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+#copiedPass {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
+
+.swal-text:first-child {
+    margin-top: unset !important;
+}
+
+.swal-button,
+.swal-footer {
+    display: none;
+}
+
+.swal-modal {
+    width: 10%;
+    height: 30px;
+    padding: 2px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 50%;
+    background-image: linear-gradient(79deg, rgba(99, 69, 237, 1) 0%, rgba(224, 57, 253, 1) 100%);
+}
+
+.swal-modal,
+.swal-text {
+
+    color: #fff !important;
+}
+
+.swal-overlay {
+    position: unset;
+}
+
+#copied {
+    position: relative;
+}
+
+.copyRight {
+    text-align: center;
+    color: #aaa;
+}
+
+@media screen and (max-width:1024px) {
+    .custom-card {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    .swal-modal {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .swal-modal {
+        width: 35%;
+    }
+
+    .custom-card {
+        width: 100%;
+    }
+
+    li,
+    .btn,
+    .btnWrapper i {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .swal-text {
+        font-size: 14px;
+    }
+}
